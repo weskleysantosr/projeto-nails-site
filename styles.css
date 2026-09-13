@@ -384,6 +384,41 @@ input {
   background: rgba(255,255,255,0.5);
 }
 
+.bottle-label {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 4.25rem;
+  left: 0.75rem;
+  z-index: 1;
+  padding: 0.6rem 0.35rem;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 14px;
+  color: var(--md-text);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 8px 20px rgba(34, 22, 54, 0.1);
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.bottle-label strong,
+.bottle-label small {
+  display: block;
+}
+
+.bottle-label strong {
+  font-size: 0.78rem;
+  line-height: 1.15;
+}
+
+.bottle-label small {
+  margin-top: 0.2rem;
+  color: var(--md-muted);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .bottle-1 { background: linear-gradient(180deg, #ff87c7, #ff5ea8); }
 .bottle-2 { background: linear-gradient(180deg, #b68cff, #7d5cff); transform: translateY(24px); }
 .bottle-3 { background: linear-gradient(180deg, #ffd089, #ff9f8c); transform: translateY(16px); }
