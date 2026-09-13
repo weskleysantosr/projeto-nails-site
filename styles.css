@@ -22,10 +22,15 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(180deg, #fff9fb 0%, #fffdfd 100%);
   color: var(--md-text);
@@ -48,7 +53,14 @@ input {
 
 .container {
   width: min(var(--container), calc(100% - 2rem));
+  min-width: 0;
   margin: 0 auto;
+}
+
+.site-shell {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 .material-card {
@@ -343,11 +355,18 @@ input {
 
 .product-showcase {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
-  gap: 1rem;
   height: 100%;
-  padding-top: 3rem;
+  padding-top: 4rem;
+}
+
+.top-seller-product-image {
+  display: block;
+  width: min(92%, 440px);
+  max-height: 410px;
+  object-fit: contain;
+  filter: drop-shadow(0 24px 22px rgba(34, 22, 54, 0.16));
 }
 
 .nail-bottle {
@@ -811,6 +830,8 @@ input {
   .hero-copy,
   .hero-visual,
   .showcase > * {
+    width: 100%;
+    max-width: 100%;
     min-width: 0;
   }
 
@@ -887,14 +908,19 @@ input {
   }
 
   .hero-copy h1 {
-    font-size: clamp(2.25rem, 11vw, 2.8rem);
-    line-height: 0.98;
+    max-width: 100%;
+    font-size: clamp(2rem, 9.8vw, 2.35rem);
+    line-height: 1;
+    letter-spacing: -0.055em;
+    overflow-wrap: break-word;
   }
 
   .hero-copy p {
+    max-width: 100%;
     margin: 1rem 0 1.25rem;
     font-size: 0.96rem;
     line-height: 1.6;
+    overflow-wrap: anywhere;
   }
 
   .chip {
@@ -904,14 +930,19 @@ input {
   }
 
   .hero-actions {
-    gap: 0.65rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
     margin-bottom: 1.5rem;
   }
 
-  .primary-btn,
-  .secondary-btn {
-    padding: 0.8rem 1rem;
-    font-size: 0.82rem;
+  .hero-actions .primary-btn,
+  .hero-actions .secondary-btn {
+    width: 100%;
+    min-width: 0;
+    padding: 0.8rem 0.45rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
   }
 
   .hero-stats {
@@ -944,29 +975,12 @@ input {
   }
 
   .product-showcase {
-    gap: 0.45rem;
-    padding-top: 5.25rem;
+    padding-top: 5.75rem;
   }
 
-  .nail-bottle {
-    width: min(27%, 88px);
-    height: 245px;
-    border-radius: 24px 24px 15px 15px;
-  }
-
-  .nail-bottle::before {
-    top: -14px;
-    width: 42px;
-    height: 27px;
-  }
-
-  .bottle-mark strong {
-    font-size: 1.55rem;
-  }
-
-  .bottle-mark small {
-    margin-top: 0.4rem;
-    font-size: 0.36rem;
+  .top-seller-product-image {
+    width: min(94%, 290px);
+    max-height: 285px;
   }
 
   .floating-card {
