@@ -384,50 +384,37 @@ input {
   background: rgba(255,255,255,0.5);
 }
 
-.bottle-label {
+.bottle-mark {
   position: absolute;
-  top: 49%;
+  top: 50%;
   left: 50%;
   z-index: 1;
-  width: 76%;
-  padding: 0.7rem 0.15rem;
   transform: translate(-50%, -50%);
-  border-top: 1px solid rgba(255, 255, 255, 0.55);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.55);
   color: #fff;
-  background: linear-gradient(90deg, transparent, rgba(45, 25, 69, 0.1), transparent);
   text-align: center;
   text-shadow: 0 1px 8px rgba(45, 25, 69, 0.3);
 }
 
-.bottle-label strong,
-.bottle-label small,
-.bottle-label em {
+.bottle-mark strong,
+.bottle-mark small {
   display: block;
 }
 
-.bottle-label strong {
-  margin: 0.22rem 0;
-  font-size: 0.74rem;
-  line-height: 1.1;
-  letter-spacing: 0.035em;
-  text-transform: uppercase;
+.bottle-mark strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.12em;
 }
 
-.bottle-label small {
+.bottle-mark small {
+  margin-top: 0.55rem;
   color: rgba(255, 255, 255, 0.82);
-  font-size: 0.48rem;
+  font-size: 0.46rem;
   font-weight: 800;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
-.bottle-label em {
-  color: rgba(255, 255, 255, 0.88);
-  font-size: 0.48rem;
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.14em;
+  white-space: nowrap;
   text-transform: uppercase;
 }
 
