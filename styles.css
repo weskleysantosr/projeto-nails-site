@@ -279,12 +279,66 @@ input {
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
-  padding: 0.5rem 0.8rem;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.82);
+  z-index: 2;
+  width: min(230px, calc(100% - 2.5rem));
+  padding: 0.85rem 1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--md-border);
-  font-size: 0.78rem;
+  box-shadow: var(--md-shadow);
+  backdrop-filter: blur(12px);
+}
+
+.visual-badge strong,
+.visual-badge small {
+  display: block;
+}
+
+.visual-badge strong {
+  margin-top: 0.35rem;
+  font-size: 1rem;
+}
+
+.visual-badge > small {
+  margin-top: 0.2rem;
+  color: var(--md-muted);
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+.top-seller-label {
+  display: inline-flex;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--md-primary), var(--md-secondary));
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.top-seller-meta {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.65rem;
+  color: #d97706;
+  font-size: 0.76rem;
   font-weight: 700;
+}
+
+.top-seller-meta small {
+  color: var(--md-muted);
+  font-size: 0.62rem;
+  font-weight: 500;
+}
+
+.top-seller-price {
+  color: var(--md-primary);
+  font-size: 1rem;
+  white-space: nowrap;
 }
 
 .product-showcase {
