@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nail Lab Pro | Fornecedor de Materiais para Nail Designer</title>
+    <meta
+      name="description"
+      content="Fornecedor de materiais para nail designer com esmaltes, ferramentas, acessórios e kits premium. Produtos de alta qualidade para profissionais e estúdios."
+    />
+    <meta
+      name="keywords"
+      content="fornecedor de material para nail designer, materiais de unhas, esmaltes, kit de manicure, acessórios para unhas, nail art"
+    />
+    <meta name="theme-color" content="#ff5ea8" />
+    <meta property="og:title" content="Nail Lab Pro" />
+    <meta
+      property="og:description"
+      content="Materiais premium para nail designer com qualidade profissional e atendimento rápido."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="access-gate" id="accessGate" aria-live="polite">
+      <div class="gate-card material-card">
+        <div class="brand-lock">
+          <span class="material-symbols-rounded">lock</span>
+        </div>
+        <p class="eyebrow">Área restrita</p>
+        <h2>Acesso exclusivo</h2>
+        <p>Digite a senha para entrar na vitrine de materiais premium.</p>
+        <form id="accessForm">
+          <label class="sr-only" for="passwordInput">Senha</label>
+          <input id="passwordInput" type="password" placeholder="Digite a senha" />
+          <button type="submit" class="primary-btn">Entrar</button>
+        </form>
+        <small>Senha de exemplo: <strong>nail2026</strong></small>
+      </div>
+    </div>
+
+    <div class="site-shell" id="siteShell">
+      <header class="topbar">
+        <nav class="navbar container">
+          <a class="brand" href="#inicio" aria-label="Nail Lab Pro home">
+            <span class="brand-mark">N</span>
+            <span>Nail Lab Pro</span>
+          </a>
+
+          <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <span class="material-symbols-rounded">menu</span>
+          </button>
+
+          <div class="nav-links">
+            <a href="#produtos">Produtos</a>
+            <a href="#diferenciais">Diferenciais</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+            <a href="#contato" class="nav-cta">Atendimento</a>
+          </div>
+        </nav>
+      </header>
+
+      <main id="inicio">
+        <section class="hero container">
+          <div class="hero-copy">
+            <span class="chip">Entrega em até 4 horas</span>
+            <h1>Materiais profissionais para a nail designer brilhar.</h1>
+            <p>
+              Encontre esmaltes, ferramentas, acessórios e kits com qualidade premium e com a
+              vantagem de receber em até 4 horas para manter seu salão sempre em movimento.
+            </p>
+            <div class="hero-actions">
+              <a href="#produtos" class="primary-btn">Ver catálogo</a>
+              <a href="#contato" class="secondary-btn">Falar com especialista</a>
+            </div>
+            <ul class="hero-stats">
+              <li>
+                <strong>+12k</strong>
+                <span>produtos vendidos</span>
+              </li>
+              <li>
+                <strong>4.9/5</strong>
+                <span>avaliação média</span>
+              </li>
+              <li>
+                <strong>4h</strong>
+                <span>entrega expressa</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-visual material-card" aria-label="Kit premium de esmaltes">
+            <div class="visual-badge">Top Seller</div>
+            <div class="product-showcase">
+              <div class="nail-bottle bottle-1"></div>
+              <div class="nail-bottle bottle-2"></div>
+              <div class="nail-bottle bottle-3"></div>
+            </div>
+            <div class="floating-card card-1">
+              <span class="material-symbols-rounded">verified</span>
+              <div>
+                <strong>Produtos confiáveis</strong>
+                <small>Qualidade profissional</small>
+              </div>
+            </div>
+            <div class="floating-card card-2">
+              <span class="material-symbols-rounded">schedule</span>
+              <div>
+                <strong>Entrega expressa</strong>
+                <small>Até 4 horas</small>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="brands container" aria-label="Marcas parceiras">
+          <p>Parceiros e marcas em destaque</p>
+          <div class="brand-row">
+            <span>Beauty House</span>
+            <span>Gloss Studio</span>
+            <span>Pink Lab</span>
+            <span>Fashion Nails</span>
+            <span>Style Gloss</span>
+          </div>
+        </section>
+
+        <section class="catalog container" id="produtos">
+          <div class="section-heading">
+            <p class="eyebrow">Catálogo</p>
+            <h2>Produtos favoritos da nossa linha</h2>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card material-card">
+              <div class="product-image image-one"></div>
+              <div class="product-body">
+                <div class="product-head">
+                  <span class="tag">Kit premium</span>
+                  <span class="price">R$ 179</span>
+                </div>
+                <h3>Kit Essentials Pro</h3>
+                <p>Esmaltes, lixas e acessórios para acabamento impecável.</p>
+                <button class="mini-btn">Adicionar</button>
+              </div>
+            </article>
+
+            <article class="product-card material-card">
+              <div class="product-image image-two"></div>
+              <div class="product-body">
+                <div class="product-head">
+                  <span class="tag">Mais vendido</span>
+                  <span class="price">R$ 94</span>
+                </div>
+                <h3>Esmaltes Neon Mix</h3>
+                <p>Paleta vibrante para nail art com acabamento premium.</p>
+                <button class="mini-btn">Adicionar</button>
+              </div>
+            </article>
+
+            <article class="product-card material-card">
+              <div class="product-image image-three"></div>
+              <div class="product-body">
+                <div class="product-head">
+                  <span class="tag">Profissional</span>
+                  <span class="price">R$ 249</span>
+                </div>
+                <h3>Kit de Ferramentas</h3>
+                <p>Cortadores, espátulas e ferramentas para manicure com precisão.</p>
+                <button class="mini-btn">Adicionar</button>
+              </div>
+            </article>
+
+            <article class="product-card material-card">
+              <div class="product-image image-four"></div>
+              <div class="product-body">
+                <div class="product-head">
+                  <span class="tag">Novo</span>
+                  <span class="price">R$ 129</span>
+                </div>
+                <h3>Gel de Brilho</h3>
+                <p>Finalização sofisticada para unhas com brilho intenso e durabilidade.</p>
+                <button class="mini-btn">Adicionar</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="features container" id="diferenciais">
+          <div class="section-heading">
+            <p class="eyebrow">Por que escolher</p>
+            <h2>Qualidade e praticidade para seu salão</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-item material-card">
+              <span class="material-symbols-rounded">inventory_2</span>
+              <h3>Estoque confiável</h3>
+              <p>Produtos em alta demanda, com reposição constante e variedade premium.</p>
+            </article>
+            <article class="feature-item material-card">
+              <span class="material-symbols-rounded">local_shipping</span>
+              <h3>Entrega em até 4 horas</h3>
+              <p>Processamento acelerado para que seu trabalho continue sem atrasos e com agilidade real.</p>
+            </article>
+            <article class="feature-item material-card">
+              <span class="material-symbols-rounded">person</span>
+              <h3>Atendimento especialista</h3>
+              <p>Equipe preparada para sugerir os melhores materiais e soluções práticas.</p>
+            </article>
+            <article class="feature-item material-card">
+              <span class="material-symbols-rounded">trending_up</span>
+              <h3>Preço justo</h3>
+              <p>Ofertas inteligentes para você manter qualidade e lucratividade.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="showcase container" id="sobre">
+          <div class="showcase-image material-card">
+            <div class="image-panel"></div>
+          </div>
+          <div class="showcase-copy">
+            <p class="eyebrow">Nossa proposta</p>
+            <h2>Mais que um fornecedor, uma parceria para criar beleza e resultados.</h2>
+            <p>
+              A Nail Lab Pro foi pensada para profissionais que valorizam materiais com alto
+              padrão, acabamento impecável e atendimento de confiança. Oferecemos soluções para
+              quem deseja elevar a experiência do cliente e fortalecer a identidade do salão.
+            </p>
+            <ul>
+              <li><span class="material-symbols-rounded">check_circle</span> Seleção curada por especialistas</li>
+              <li><span class="material-symbols-rounded">check_circle</span> Produtos ideais para nail art e manicure</li>
+              <li><span class="material-symbols-rounded">check_circle</span> Atendimento ágil e consultoria personalizada</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="testimonials container">
+          <div class="section-heading">
+            <p class="eyebrow">Depoimentos</p>
+            <h2>Profissionais que confiam no nosso material</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="quote material-card">
+              <p>
+                “A qualidade dos produtos superou a expectativa. O atendimento é rápido e a nossa
+                rotina de trabalho ficou muito mais eficiente.”
+              </p>
+              <div class="author">
+                <strong>Marina C.</strong>
+                <span>Nail designer</span>
+              </div>
+            </article>
+            <article class="quote material-card">
+              <p>
+                “Os materiais são impecáveis e deixam a experiência do cliente muito mais premium.
+                Ótima parceria para o meu salão.”
+              </p>
+              <div class="author">
+                <strong>Thaís V.</strong>
+                <span>Proprietária de salão</span>
+              </div>
+            </article>
+            <article class="quote material-card">
+              <p>
+                “Preço justo, variedade excelente e uma entrega bem mais ágil do que esperávamos.
+                Recomendo bastante.”
+              </p>
+              <div class="author">
+                <strong>Renata P.</strong>
+                <span>Especialista em nail art</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="cta-strip container">
+          <div class="cta-box material-card">
+            <div>
+              <p class="eyebrow">Vamos crescer juntos</p>
+              <h2>Seu próximo material premium chega rápido: em até 4 horas.</h2>
+            </div>
+            <a href="#contato" class="primary-btn">Solicitar orçamento</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="contato">
+        <div class="container footer-grid">
+          <div>
+            <div class="brand footer-brand">
+              <span class="brand-mark">N</span>
+              <span>Nail Lab Pro</span>
+            </div>
+            <p>Fornecimento premium para nail designers e salões com foco em qualidade, beleza e praticidade.</p>
+          </div>
+
+          <div>
+            <h3>Contato</h3>
+            <ul>
+              <li>WhatsApp: (11) 99999-8484</li>
+              <li>Email: contato@naillabpro.com.br</li>
+              <li>Instagram: @naillabpro</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Pagamento</h3>
+            <ul>
+              <li>PIX</li>
+              <li>Cartão de crédito</li>
+              <li>Boleto</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="year"></span> Nail Lab Pro — Todos os direitos reservados.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
